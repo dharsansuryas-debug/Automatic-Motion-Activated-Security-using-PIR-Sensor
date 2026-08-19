@@ -61,11 +61,54 @@ Step 7: Save Your Work
 
 # Code:
 
+int pirPin = 2;
+
+int ledPin = 13;
+
+int buzzerPin = 12;
+
+
+
+void setup() {
+
+  pinMode(pirPin, INPUT);
+  
+  pinMode(ledPin, OUTPUT);
+  
+  pinMode(buzzerPin, OUTPUT);
+  
+}
+
+
+
+void loop() {
+
+  int pirValue = digitalRead(pirPin);
+  
+  if (pirValue == HIGH) 
+  {
+  
+  digitalWrite(ledPin, HIGH);
+    
+  digitalWrite(buzzerPin, HIGH);
+    
+   delay(2000);
+    
+  } else {
+  
+  digitalWrite(ledPin, LOW);
+    
+  digitalWrite(buzzerPin, LOW);
+    
+  }
+  
+}
 
 
 # Output:
 
 
+<img width="900" height="1600" alt="WhatsApp Image 2026-08-19 at 15 53 32" src="https://github.com/user-attachments/assets/02fa64f1-3ef7-4128-a3c3-9c456009f37d" />
 
 
 # Result:
